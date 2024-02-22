@@ -1,5 +1,6 @@
 package cat.institutmontilivi.pedrapapertisoresllangardaix.navegacio
 
+import PedraPaperTisores
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -7,7 +8,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
 import cat.institutmontilivi.pedrapapertisoresllangardaix.ui.pantalles.Instruccions
-import cat.institutmontilivi.pedrapapertisoresllangardaix.ui.pantalles.PedraPaperTisores
 import cat.institutmontilivi.pedrapapertisoresllangardaix.ui.pantalles.Portada
 import cat.institutmontilivi.pedrapapertisoresllangardaix.ui.pantalles.Preferencies
 import cat.institutmontilivi.pedrapapertisoresllangardaix.ui.pantalles.QuantA

@@ -17,7 +17,7 @@ fun QuantA ()
 {
     Box(Modifier.fillMaxSize(). background(color = MaterialTheme.colorScheme.surfaceVariant))
     {
-        Text(text = "Desenvolupat per a Pol Besalú, Institut Montilivi. \n Practica inspirada pel professor Xavier Sanmartin.",
+        Text(text = "Desenvolupat per a Pol Besalú, Institut Montilivi. \n Practica disenyada pel professor Xavier Sanmartin.",
             modifier = Modifier.align(Alignment.Center),
             style = MaterialTheme.typography.displaySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,

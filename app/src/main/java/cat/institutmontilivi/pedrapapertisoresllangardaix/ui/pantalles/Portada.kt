@@ -12,6 +12,7 @@ import androidx.compose.material3.Divider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -35,15 +36,16 @@ fun Portada (onClick:()->Unit = {})
             painterResource(id = R.drawable.logo_vermell),
             contentDescription = null,
             modifier = Modifier.fillMaxWidth(),
-            contentScale = ContentScale.FillWidth)
+            contentScale = ContentScale.FillWidth,
+            alignment = Alignment.Center)
         Spacer (Modifier.height(48.dp))
         Divider(color = MaterialTheme.colorScheme.onSecondaryContainer,modifier= Modifier.height(15.dp))
         Spacer (Modifier.weight(1F))
         Image(painterResource(id = R.drawable.tisora), contentDescription="P-P-T-L-S")
         Spacer (Modifier.weight(1F))
-        Text(text = "Decissor",
+        Text(text = "PEDRA, PAPER, TISORES, LLANGARDAIX, SPOCK",
             modifier = Modifier.fillMaxWidth(),
-            style = MaterialTheme.typography.displayLarge,
+            style = MaterialTheme.typography.displaySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center)
         Spacer (Modifier.weight(1F))

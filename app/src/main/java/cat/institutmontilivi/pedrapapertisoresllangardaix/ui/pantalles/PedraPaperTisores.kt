@@ -67,7 +67,8 @@ fun PedraPaperTisores(jocViewModel: PedraPaperTisoresViewModel = viewModel()) {
             Image (
                 painterResource(id = estat.imatgeJugador),
                 contentDescription = null,
-                modifier = Modifier.width(150.dp)
+                modifier = Modifier
+                    .width(150.dp)
                     .height(150.dp),
                 contentScale = ContentScale.FillWidth)
             Spacer(modifier = Modifier.width(16.dp))
@@ -75,7 +76,8 @@ fun PedraPaperTisores(jocViewModel: PedraPaperTisoresViewModel = viewModel()) {
             Image (
                 painterResource(id = estat.imatgeRandom),
                 contentDescription = null,
-                modifier = Modifier.width(150.dp)
+                modifier = Modifier
+                    .width(150.dp)
                     .height(150.dp),
                 contentScale = ContentScale.FillWidth)
 
@@ -146,8 +148,13 @@ fun PedraPaperTisores(jocViewModel: PedraPaperTisoresViewModel = viewModel()) {
             }
             Divider(Modifier.fillMaxWidth())
             Row {
-                Text(text = "Victories: \t" + estat.victoriesEstat, fontWeight = FontWeight.Bold)
-                Text(text = "\t \tVictories Rival: \t" + estat.rondesPerdudesEstat, fontWeight = FontWeight.Bold)
+                Text(text = "Rondes guanyades: \t" + estat.rondesGuanyadesEstat, fontWeight = FontWeight.Bold)
+                Text(text = "\t \tRondes guanyades rival: \t" + estat.rondesPerdudesEstat, fontWeight = FontWeight.Bold)
+                Spacer(modifier = Modifier.width(30.dp))
             }
+
+        Row {
+            Text(text = "Victories: \t" + estat.victoriesEstat, fontWeight = FontWeight.Bold)
+        }
         }
     }

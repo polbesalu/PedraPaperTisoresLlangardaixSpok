@@ -90,7 +90,7 @@ fun Bastida(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Decissor") },
+                title = { Text("P-P-T-L-S") },
 
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary,
